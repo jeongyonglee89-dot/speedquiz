@@ -1,0 +1,36 @@
+# 철강 상식 스피드 퀴즈 테마. 웹 퀴즈(css/style.css)와 같은 대회 브랜드:
+# 밝은 강판 톤 배경 + 차콜 글자 + 쇳물 오렌지 한 가지만 강조. 글자 색 조합은 WCAG AA(4.5:1) 이상.
+[theme]
+base = "light"
+primaryColor = "#C2410C"             # 쇳물 오렌지: 주요 버튼·진행 막대 (흰 글자 대비 5.2:1)
+backgroundColor = "#F8F9FB"          # 패널 톤 배경
+secondaryBackgroundColor = "#E9EDF1" # 강판 톤: 입력칸·보조 영역
+textColor = "#1E252D"                # 차콜 (배경 대비 15:1)
+borderColor = "#CFD6DE"
+linkColor = "#C2410C"
+linkUnderline = false
+
+# 상태·카테고리 색 (배지·알림에 쓰인다). 웹 버전과 같은 값
+redColor = "#C62828"                 # 오답·시간 임박
+orangeColor = "#C2410C"              # 기술 카테고리·타이머
+greenColor = "#157443"               # 정답·제품 카테고리
+blueColor = "#2B6CB0"                # 시장 카테고리
+grayColor = "#56616D"                # 보조 글자 (배경 대비 5.9:1)
+
+font = "'Pretendard Variable', Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif:https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+baseFontSize = 16
+headingFontWeights = [800, 700, 700, 700, 600, 600]
+headingFontSizes = ["2rem", "1.5rem", "1.3rem", "1.1rem", "1rem", "0.9rem"]
+baseRadius = "6px"
+buttonRadius = "6px"
+showWidgetBorder = true
+dataframeHeaderBackgroundColor = "#E9EDF1"
+dataframeBorderColor = "#CFD6DE"
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+# 공개 대회 앱이므로 예외가 나도 화면에는 일반 안내만 보이고, 자세한 내용(코드·스택)은 서버 콘솔에만 남긴다
+showErrorDetails = "none"
